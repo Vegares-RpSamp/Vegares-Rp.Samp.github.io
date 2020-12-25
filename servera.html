@@ -1,0 +1,114 @@
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Vegares RP</title>
+	<link rel="icon" href="favicon/favicon.ico"; type="image/x-icon" /> <!-- Картинка находится по пути %корень сайта%/favicon/ -->
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="wow-animation/animate.min.css">
+	<script type='text/javascript' src='jquery-3.2.1.min.js'></script>
+	<script type='text/javascript' src='js.js'></script>
+	<script src="wow-animation/wow.min.js"></script>
+	<script>
+    	new WOW().init();
+	</script>
+</head>
+<body>
+   <div id="Head">
+		<div class="container">
+			<a href="index.html" id="Logo">VEGARES ROLE PLAY</a>
+			<nav id="HeaderMenu">
+				<ul id="HeaderMenuUL">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="donate.html">Донат</a></li>
+					<li><a href="https://vk.com/vegaresrp">Новости</a></li>
+					<li><a href="http://forum.vegares-rp.ru/">Форум - Разработка</a></li>
+					<li><a href="social.html">Соц-Сети</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<section class="WhyUnusual">
+		<div class="container">
+			<h2 class="TitleH2">Наши сервера:</h2>
+			<div class="WhyUnusualBlock">
+				<div class="WhyUnusualSubblock wow rotateInDownLeft" data-wow-duration="0.5s" data-wow-delay="0.5s" data-wow-offset="120">
+					<p class="">Vegares Role Play | Happy Helloween<br>IP: 195.2.76.5:8888</p>
+				</div>
+				<div class="WhyUnusualSubblock wow rotateInDownLeft" data-wow-duration="0.5s" data-wow-delay="1s" data-wow-offset="120">
+					<p class="">Vegares Role Play | Happy Helloween<br>IP: 195.2.76.5:8888</p>
+				</div>
+				<div class="WhyUnusualSubblock wow rotateInDownLeft" data-wow-duration="0.5s" data-wow-delay="1.5s" data-wow-offset="120">
+					<p class="">Vegares Role Play | Happy Helloween<br>IP: 195.2.76.5:8888</p>
+				</div>
+		    </div>
+		</div>
+		<footer>
+		<div class="container">
+			<nav id="FooterMenu">
+				<ul id="FooterMenuUL">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="donate.html">Донат</a></li>
+					<li><a href="https://vk.com/vegaresrp">Новости</a></li>
+					<li><a href="http://forum.vegares-rp.ru/">Форум - Разработка</a></li>
+					<li><a href="social.html">Соц-Сети</a></li>
+				</ul>
+			</nav>
+			<hr>
+			<div id="FooterInfo">
+				<p id="Copyrighted">© 2019-2020 Vegares-Rp.</p>
+				<p id="Dev">Developed By</p>
+				<a href="https://vk.com/sergeydrangov" class="DevLinks" id="DL2">
+					<div id="DevLinksBlockWA"></div>
+					<div id="DevLinksBlockWD"></div>
+				</a>
+				<a href="https://vk.com/vegaresrp" class="DevLinks" id="DL1">
+					<div id="DevLinksBlockPA"></div>
+					<div id="DevLinksBlockPD"></div>
+				</a>
+			</div>
+		</div>
+	</footer>
+	<?php include_once "social.php" ?>
+	<?php include_once "footer.php" ?>
+	<style type="text/css">
+		#Preloader>p{
+			display:none;
+		}
+		#Preloader_preload{
+			display: block;
+			position: fixed;
+			z-index: 99999;
+			top: 0;left: 0;
+			width: 100%;
+			height: 100%;
+			min-width: 1000px;
+			background: #5b81ec url(http://hello-site.ru//main/images/preloads/rings.svg) center center no-repeat;
+			background-size: 100px;
+		}
+	</style>
+	<div id="Preloader">
+		<div id="Preloader_preload">
+		</div>
+	</div>
+	<script type="text/javascript">
+	var hellopreloader = document.getElementById("Preloader_preload");
+	function fadeOutnojquery(el){
+		el.style.opacity = 1;
+		var interhellopreloader = setInterval(function(){
+			el.style.opacity = el.style.opacity - 0.05;
+			if (el.style.opacity <= 0.05){ 
+				clearInterval(interhellopreloader);
+				hellopreloader.style.display = "none";
+			}
+		},16);
+	}
+	window.onload = function(){
+		setTimeout(function(){
+			fadeOutnojquery(Preloader);
+		},1000);
+	};
+	</script>
+</body>
+</html>
